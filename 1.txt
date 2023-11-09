@@ -1,13 +1,1 @@
-To achieve these goals, this paper introduces a novel congestion control algorithm for datacenter TCP based on Dual Congestion Control Signals (DCCS). DCCS leverages the advantages provided by two congestion signals (i.e., ECN and delay), to enhance its congestion control capabilities. 
 
-By incorporating both ECN and delay information, DCCS aims to optimize the performance of datacenter TCP in a comprehensive manner.
-Our experimental ﬁndings indicate that while the delay signal exhibits fast convergence, it lacks reliability and tends to be overly sensitive. On the other hand, the ECN signal oﬀers accurate congestion detection but suﬀers from slow convergence and an inability to detect multi-bottleneck congestion situations.
-
-The design of DCCS is driven by the observed variations in performance between ECN-based and delay-based congestion control methods across different scenarios. 
-
-
-
-DCCS can benefit from the low end-to-end delay inherent in the delay signal while also leveraging the burst tolerance provided by the ECN signal. This integration of signals allows DCCS to strike a balance between responsiveness and accuracy in detecting and mitigating congestion in DCNs.
-
-
-(1) ACK measurement module; (2) Dual congestion control signals management module; (3) Congestion window updates management module.
